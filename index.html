@@ -16,6 +16,13 @@ form.myfile.addEventListener( 'change', function(e) {
     var result = e.target.files;
     alert( result );
 });
+if(localStorage.getItem('sample')){
+  alert("今保存されているデータ" + localStorage.getItem('sample'));
+}
+else{
+  localStorage.setItem('sample',"abc")
+  alert("ストレージに何も登録されてません、テキスト「abc」を保存しましたー")
+}
   </script>
 </body>
 </html>
